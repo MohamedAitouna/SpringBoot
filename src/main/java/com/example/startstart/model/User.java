@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
 
@@ -19,18 +19,12 @@ public class User {
 	private Long id;
 
 	@NotNull
-	private String username;
+	private String login;
 
 	@NotNull
 	private String password;
 
-	private String first_name;
-
-	private String last_name;
-
-	private String email;
-
-	private String profile_id;
+	private String mail;
 
 	private String role;
 
@@ -42,12 +36,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
 	public String getPassword() {
@@ -58,36 +52,12 @@ public class User {
 		this.password = password;
 	}
 
-	public String getFirst_name() {
-		return first_name;
+	public String getMail() {
+		return mail;
 	}
 
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
-	}
-
-	public String getLast_name() {
-		return last_name;
-	}
-
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getProfile_id() {
-		return profile_id;
-	}
-
-	public void setProfile_id(String profile_id) {
-		this.profile_id = profile_id;
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
 
 	public String getRole() {
