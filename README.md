@@ -1,6 +1,6 @@
 # StarStar
 A Spring boot project for A simple Rest Api .
-- Spring boot, Hibernate, Mave
+- Spring boot, Hibernate, Maven, MySql
 
 ## 1- Features Toggle
 Features Toggle Managemets (CRUD Repository, Service, Controller for [Get, Create...] )
@@ -9,7 +9,7 @@ Costumers Managemets (CRUD Repository, Controller for [Get])
 ## 3- Users
 Users
 
-Development environment should includes JDK 11+
+Development environment should includes JDK 11+, MySql
 
 ### mvn spring-boot:run 
 to run the application at Port 8090
